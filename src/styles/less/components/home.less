@@ -1,0 +1,44 @@
+@import  '../variables/colors.less';
+
+.greeting{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .action-button{
+        background-color: @orange;
+        font-size: 14px;
+        font-weight: 700;
+        color: @white;
+        border-radius: 4px;
+        text-decoration: none;
+        padding: 5px 10px;
+        height: 40px;
+        width: 200px;
+        line-height: 40px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .greeting-actions-container{
+        .greeting-action{
+            width: 50%;
+            position: relative;
+            &:first-child{
+                min-height: 450px;
+                .action-button:first-child{
+                    background-color: @dark-orange;
+                }
+                .action-button:last-child{
+                    background-color: @red;
+                }
+            }
+            &:last-child{
+                justify-content: flex-end;
+                .greeting-image{
+                    width: 100%;
+                    max-width: 150px;
+                }
+            }
+        }
+    }
+}

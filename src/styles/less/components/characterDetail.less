@@ -1,0 +1,72 @@
+@import  '../variables/colors.less';
+  .character-details{
+    box-sizing: border-box;
+    padding: 1rem;
+    box-shadow: rgb(255, 255, 255) 0px 0px 10px 0px;
+    border-radius: 4px;
+    margin: 1rem;
+    .title{
+        margin-left: 3rem;
+        text-align: center;
+        margin: 1rem;
+        color: rgb(233, 30, 99);
+        &.yellow{color: @yellow;}
+        &.red{color: @red;}
+    }
+    .image-container{
+        width: 35%;
+        padding: 1rem;
+        img{
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .character-details-container{
+        padding: 1rem;
+        width:65%;
+        .info-row{
+            padding: 1rem 0;
+            border-bottom: 1px solid #bdbdbd;
+            &:last-child{
+                border-bottom: 0px;
+            }
+            .info-detail-column{
+                width: 50%;
+                &:first-child{
+                    color: @white;
+                    font-weight: 700;
+                }
+                &:last-child{
+                    font-weight: 700;
+                    &.green{color:@green}
+                    &.dark-orange{color:@dark-orange}
+                    &.light-blue{color:@light-blue}
+                    .action-button{
+                        text-decoration: none;
+                        &.dark-red{color:@dark-red}
+                        &.purple{color:@purple}
+                        span{
+                            padding-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .episodes-container{
+        flex-wrap: wrap;
+        padding: 1rem;
+        box-sizing: inherit;
+        .action-button{
+            width: 100px;
+            height: 50px;
+            margin: 13px;
+            text-decoration: none;
+            color: @white;
+            background-color: @purple;
+            border-radius: 4px;
+        }
+    }
+  }
+

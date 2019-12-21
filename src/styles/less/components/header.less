@@ -1,0 +1,23 @@
+@import  '../variables/colors.less';
+.header{
+    width: 100%;
+    background: black;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    .navigations{
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        & > li{
+            padding: 0 1rem;
+            margin-right: 1rem;
+            & > a{
+                text-decoration:  none;
+                color: @red;
+                font-weight: 700;
+            }
+        }
+    }
+  }
